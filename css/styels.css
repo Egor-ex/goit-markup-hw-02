@@ -1,0 +1,106 @@
+/*цвет основного текста   color: #212121*/
+/*вторичный цвет текста color: #757575;*/
+/* белый color: #FFFFFF*/
+/* акцент color: #2196F3; */
+/* вторичный цвет фона color: #2F303A */
+/* текст font-family: 'Roboto', sans-serif; */
+
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --acent-color: #2196f3;
+  --title-list-color: #ffffff;
+  --secondary-bg-color: #2f303a;
+  --logo-text-color: #000000;
+  --button-bg-color: #f5f4fa;
+}
+
+body {
+  background-color: var(--title-list-color);
+  color: var(--primary-text-color);
+}
+.list {
+  list-style: none;
+}
+.logo {
+  color: var(--logo-text-color);
+}
+.logo .logo-accent {
+  color: var(--acent-color);
+}
+
+/* Site nav */
+.site-nav a {
+  color: var(--primary-text-color);
+}
+.site-nav .link:focus,
+.site-nav .link:hover {
+  color: var(--acent-color);
+}
+.site-nav .link.current {
+  color: var(--acent-color);
+}
+
+/* Auth nav */
+.auth-nav a {
+  color: var(--title-text-color);
+}
+.auth-nav .link:focus,
+.auth-nav .link:hover {
+  color: var(--acent-color);
+}
+
+/* Services */
+.services,
+.services-title {
+  color: var(--title-list-color);
+  background-color: var(--secondary-bg-color);
+}
+
+/* Section */
+.section-text {
+  color: var(--title-text-color);
+}
+.section-title {
+  color: var(--primary-text-color);
+}
+
+/* Прячем заголовок */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* Подвал */
+.footer {
+  background-color: var(--secondary-bg-color);
+}
+.footer .logo {
+  color: var(--title-list-color);
+}
+
+/* Кнопки */
+.button {
+  color: var(--primary-text-color);
+  background-color: var(--button-bg-color);
+  cursor: pointer;
+}
+.button.primary {
+  color: var(--title-list-color);
+  background-color: var(--acent-color);
+}
+.button:focus,
+.button:hover {
+  color: var(--title-list-color);
+  background-color: var(--acent-color);
+}
+.button.current {
+  color: var(--title-list-color);
+  background-color: var(--acent-color);
+}
