@@ -30,7 +30,9 @@ body {
 .logo .logo-accent {
   color: var(--acent-color);
 }
-
+.address {
+  font-style: inherit;
+}
 /* Site nav */
 .site-nav .link {
   color: var(--primary-text-color);
@@ -60,7 +62,6 @@ body {
 .auth-nav .link-item {
   color: var(--footer-text-color);
 
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
